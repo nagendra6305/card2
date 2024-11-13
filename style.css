@@ -1,0 +1,128 @@
+body{
+    background-color: #f7fafc;
+   
+    max-height: 100vh;
+    margin:0 ;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+.card-container{
+    display: flex;
+    justify-content: center;
+   height: 100vh;
+   align-items: center;
+    gap: 24px;
+}
+.card{
+    background-color:#ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px hsla(0, 62%, 55%, 0.1);
+    width: 320px;
+    display: flex;
+    align-items: center;
+}
+ .card-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+ }
+ .badge{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 12px;
+ }
+ .badge-hourly{
+    background-color: #87d19e;
+    color: #38a169;
+ }
+
+ .badge-part-time{
+    background-color: #fbd38d;
+    color: #dd6b20;
+
+ }
+ .price{
+    color: #4a5568;
+    font-weight: 600;
+ }
+ .title{
+    font-size: 20px;
+    font-weight:600 ;
+    margin-bottom: 8px;
+    justify-content: center;
+    align-items: center;
+    
+ }
+ 
+ .company{
+    display: flex;
+    align-items: center;
+    color: #87d19e;
+    margin-bottom: 16px;
+ }
+ .company i{
+    margin-right: 8px;
+ }
+ .skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap:8px;
+    margin-bottom:16px ;
+ }
+ .skill{
+    background-color:#edf2f7;
+    color:  #4a5568;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 12px;
+
+ }
+ .skill-more{
+    background-color: #ebf8ff;
+    color:#3182ce
+ }
+ .description{
+    color: #718096;
+    font-size: 14px;
+    margin-bottom: 16px;
+ }
+ .view-job {
+    color: #4299e1;
+    font-weight: 600;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        padding: 16px; 
+    }
+    .title {
+        font-size: 18px;
+    }
+    .description {
+        font-size: 13px;
+    }
+}
+@media (max-width: 480px) {
+    .card-container {
+        flex-direction: column; 
+    }
+    .card {
+        width: 100%;
+        padding: 16px;
+    }
+    .title {
+        font-size: 16px;
+    }
+    .price, .badge {
+        font-size: 11px;
+    }
+    .description {
+        font-size: 12px;
+    }
+}
